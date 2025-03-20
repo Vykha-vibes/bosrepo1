@@ -5,7 +5,7 @@ pipeline {
       steps {
         git(url: 'https://github.com/Vykha-vibes/bosrepo1', branch: 'master', credentialsId: 'bea40f74-08d1-4900-9bcb-30f46ccb2fe6')
         sh '''sudo docker build -t vykha/jenkinsrepo1:ocean1 .
-sudo docker push vykha/jenkinsrepo1:ocean1 .'''
+sudo docker push vykha/jenkinsrepo1:ocean1'''
       }
     }
 
